@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+    <body background="2877d32468eb4b0d895a428ba2f7ee6e.jpg">
+       <h1 style="background:white;">Change the color of the button and heading tags</h1>
+     <p><b>Description: </b>Change the bootstrap button class to change the color and border-radius for the play button, and for speed and volume heading tag
+      <ol>
+        <li>We want a yellow background color for "speed" and " volume" heading tags so change the bootstrap button class accordingly. Learn more about bootstrap button class -<a target="_blank" href="https://getbootstrap.com/docs/4.0/components/buttons/">Button class</a> (Write the above code in index.html)</li>
+        <li>We want dark red background color of "play" button so change the bootstrap button class to accordingly (Write the above code in index.html)</li>
+        <li>Give border radius to these heading tags using id "speed" and "volume"(Write the above code in style.css)</li>
+      </ol>
+      </p>
+<center>
+  	<h3 class="btn btn-info heading">AI DJ WEB APP
+  	</h3>
+
+  <div class="row">
+    <div class="col-md-4">
+      <!--Change bootstrap button class so that we get dark red background for this button-->
+      <button onclick="play();" class="btn btn-success play_button">Play</button>
+    </div>
+    <div class="div_speed col-md-4">
+      <img class="mt-5" src="PLBs.gif" width="120" height="120">
+		<br>
+		<img src="PLBs.gif"  width="200" >
+		<br>
+      <!--Change bootstrap button class so that we get yellow background for this h3 tag-->
+		<h3 class="btn btn-danger" id="speed">Speed</h3>
+	</div>
+
+	<div class="div_volume col-md-4">
+      <img class="mt-5" src="PLBs.gif" width="120" height="120">
+		<br>
+		<img src="PLBs.gif"  width="200" >
+		<br>
+      <!--Change bootstrap button class so that we get yellow background for this h3 tag-->
+		<h3 class="btn btn-danger" id="volume">Volume</h3>
+	</div>
+  </div>
+
+
+	
+<div class="footer_div">
+		<i class="note text-muted">NOTE - Move your left-hand wrist up and down for increasing and decreasing the volume. Move your right-hand wrist up and down for increasing and decreasing the speed</i>
+	</div>
+</center>
+
+    <script src="sketch.js"></script>
+  </body>
+</html>
